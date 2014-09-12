@@ -3,6 +3,9 @@ WuNameMe
 
 Wu-Tang Clan Name Generator for Android. My first Android project.
 
+<i>C.R.E.A.M. get the money
+Dolla dolla bill y'all</i>
+
 ## Inspiration
 [Wu-Tang Names Generator](http://www.mess.be/inickgenwuname.php)
 
