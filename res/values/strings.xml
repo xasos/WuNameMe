@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">WuNameMe</string>
+    <string name="action_settings">Settings</string>
+    <string name="instructions">Fill in your name below to enter the Wu-Tang!</string>
+    <string name="last_name">Last name</string>
+    <string name="first_name">First Name</string>
+    <string name="wu_name">WuNameMe!</string>
+    <color name="black">#000000</color>
+    <color name="yellow">#ffff00</color>
+    <color name="white">#ffffff</color>
+    <string name="your_name">You Are</string>
+    <string name="wu_tang_name">Nada.</string>
+    <string name="tweet_content_descript">Tweet your new Wu-Tang name to the world!</string>
+    <color name="blue">#00FFFF</color>
+    <drawable name="blue">#7FFFD4</drawable>
+
+</resources>
