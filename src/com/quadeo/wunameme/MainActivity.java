@@ -22,10 +22,11 @@ public class MainActivity extends Activity {
 	
 	private String name1 = "";
 	private String name2 = "";
+        private String tweet = ""; 
+        private String finalName = "";
 	private int sumFirst = 0;
 	private int sumSecond = 0;
 	private int sumTotal = 0;
-	private String finalName = "";
 	private Button wuName;
 	private EditText editText1;
 	private EditText editText2;
@@ -33,10 +34,8 @@ public class MainActivity extends Activity {
 	private TextView textView3;
 	private ImageView tweetBird;
 	private boolean nameFound = false;
-	private String tweet = "";
-
 	
-	@Override
+        @Override
 	protected void onCreate(Bundle savedInstanceState) 
 	{
 		super.onCreate(savedInstanceState);
