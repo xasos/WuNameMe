@@ -433,7 +433,8 @@ public class MainActivity extends Activity {
 				+ "\n http://goo.gl/x4uoMS"
 				+ "\n via @WuNameMe";
 		String tweetUrl = "https://twitter.com/intent/tweet?text=" + tweet + " &url=";
-        Uri uri = Uri.parse(tweetUrl);
+        	
+        	Uri uri = Uri.parse(tweetUrl);
 		startActivity(new Intent(Intent.ACTION_VIEW, uri));
 	}
 }
