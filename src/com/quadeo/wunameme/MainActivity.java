@@ -16,14 +16,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import java.util.ArrayList;
-
-import twitter4j.Status;
-import twitter4j.Twitter;
-import twitter4j.TwitterException;
-import twitter4j.TwitterFactory;
-import twitter4j.conf.ConfigurationBuilder;
 
 public class MainActivity extends Activity {
 	
@@ -40,7 +33,7 @@ public class MainActivity extends Activity {
 	private TextView textView3;
 	private ImageView tweetBird;
 	private boolean nameFound = false;
-	private String tweet;
+	private String tweet = "";
 
 	
 	@Override
@@ -145,36 +138,36 @@ public class MainActivity extends Activity {
 		letterMap[23] = 'x';
 		letterMap[24] = 'y';
 		letterMap[25] = 'z';
-		letterMap[26] = '‡';
-		letterMap[27] = '·';
-		letterMap[28] = '‚';
-		letterMap[29] = '„';
-		letterMap[30] = '‰';
-		letterMap[31] = 'Â';
-		letterMap[32] = 'Ê';
-		letterMap[33] = 'Á';
-		letterMap[34] = 'Ë';
-		letterMap[35] = 'È';
-		letterMap[36] = 'Í';
-		letterMap[37] = 'Î';
-		letterMap[38] = 'Ï';
-		letterMap[39] = 'Ì';
-		letterMap[40] = 'Ó';
-		letterMap[41] = 'Ô';
-		letterMap[42] = '';
-		letterMap[43] = 'Ò';
-		letterMap[44] = 'Ú';
-		letterMap[45] = 'Û';
-		letterMap[46] = 'Ù';
-		letterMap[47] = 'ı';
-		letterMap[48] = 'ˆ';
-		letterMap[49] = '˘';
-		letterMap[50] = '˙';
-		letterMap[51] = '˚';
-		letterMap[52] = '¸';
-		letterMap[53] = '˝';
-		letterMap[54] = '˛';
-		letterMap[55] = 'ˇ';
+		letterMap[26] = '√†';
+		letterMap[27] = '√°';
+		letterMap[28] = '√¢';
+		letterMap[29] = '√£';
+		letterMap[30] = '√§';
+		letterMap[31] = '√•';
+		letterMap[32] = '√¶';
+		letterMap[33] = '√ß';
+		letterMap[34] = '√®';
+		letterMap[35] = '√©';
+		letterMap[36] = '√™';
+		letterMap[37] = '√´';
+		letterMap[38] = '√¨';
+		letterMap[39] = '√≠';
+		letterMap[40] = '√Æ';
+		letterMap[41] = '√Ø';
+		letterMap[42] = '√∞';
+		letterMap[43] = '√±';
+		letterMap[44] = '√≤';
+		letterMap[45] = '√≥';
+		letterMap[46] = '√¥';
+		letterMap[47] = '√µ';
+		letterMap[48] = '√∂';
+		letterMap[49] = '√π';
+		letterMap[50] = '√∫';
+		letterMap[51] = '√ª';
+		letterMap[52] = '√º';
+		letterMap[53] = '√Ω';
+		letterMap[54] = '√æ';
+		letterMap[55] = '√ø';
 		
 		//Remap numbers + reset [num] on array to fit # of chars
 				
@@ -204,37 +197,37 @@ public class MainActivity extends Activity {
 		letterMapUpper[23] = 'X';
 		letterMapUpper[24] = 'Y';
 		letterMapUpper[25] = 'Z';
-		letterMapUpper[26] = '¿';
-		letterMapUpper[27] = '¡';
-		letterMapUpper[28] = '¬';
-		letterMapUpper[29] = '√';
-		letterMapUpper[30] = 'ƒ';
-		letterMapUpper[31] = '≈';
-		letterMapUpper[32] = '∆';
-		letterMapUpper[33] = '«';
-		letterMapUpper[34] = '»';
-		letterMapUpper[35] = '…';
-		letterMapUpper[36] = ' '; 
-		letterMapUpper[37] = 'À';
-		letterMapUpper[38] = 'Ã';
-		letterMapUpper[39] = 'Õ';
-		letterMapUpper[40] = 'Œ';
-		letterMapUpper[41] = 'œ';
-		letterMapUpper[42] = '–'; 
-		letterMapUpper[43] = '—';
-		letterMapUpper[44] = '“';
-		letterMapUpper[45] = '”';
-		letterMapUpper[46] = '‘';
-		letterMapUpper[47] = '’';
-		letterMapUpper[48] = '÷';
-		letterMapUpper[49] = 'Ÿ';
-		letterMapUpper[50] = '⁄';
-		letterMapUpper[51] = '€';
-		letterMapUpper[52] = '‹';
-		letterMapUpper[53] = '›';
-		letterMapUpper[54] = 'ﬁ';
-		letterMapUpper[55] = 'ﬂ';
-		letterMapUpper[56] = 'ﬁ';
+		letterMapUpper[26] = '√Ä';
+		letterMapUpper[27] = '√Å';
+		letterMapUpper[28] = '√Ç';
+		letterMapUpper[29] = '√É';
+		letterMapUpper[30] = '√Ñ';
+		letterMapUpper[31] = '√Ö';
+		letterMapUpper[32] = '√Ü';
+		letterMapUpper[33] = '√á';
+		letterMapUpper[34] = '√à';
+		letterMapUpper[35] = '√â';
+		letterMapUpper[36] = '√ä'; 
+		letterMapUpper[37] = '√ã';
+		letterMapUpper[38] = '√å';
+		letterMapUpper[39] = '√ç';
+		letterMapUpper[40] = '√é';
+		letterMapUpper[41] = '√è';
+		letterMapUpper[42] = '√ê'; 
+		letterMapUpper[43] = '√ë';
+		letterMapUpper[44] = '√í';
+		letterMapUpper[45] = '√ì';
+		letterMapUpper[46] = '√î';
+		letterMapUpper[47] = '√ï';
+		letterMapUpper[48] = '√ñ';
+		letterMapUpper[49] = '√ô';
+		letterMapUpper[50] = '√ö';
+		letterMapUpper[51] = '√õ';
+		letterMapUpper[52] = '√ú';
+		letterMapUpper[53] = '√ù';
+		letterMapUpper[54] = '√û';
+		letterMapUpper[55] = '√ü';
+		letterMapUpper[56] = '√û';
 
 		//These two for loops will calculate the first and last name's numerical value
 		for(int i = 0; i<name1.length(); i++) 
